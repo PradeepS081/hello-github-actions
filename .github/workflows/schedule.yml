@@ -1,0 +1,12 @@
+name: Scheduled Workflow
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'  # Runs every day at midnight
+
+jobs:
+  print_time:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print current time
+      run: date
