@@ -1,9 +1,9 @@
 name: Scheduled Workflow
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # Manual trigger option
   schedule:
-    - cron: '*/1 * * * *'  # Runs every minute
+    - cron: '0 0 * * 3'  # Runs every Wednesday at midnight
 
 jobs:
   print_time:
